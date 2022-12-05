@@ -1,3 +1,3 @@
 import sys
 def handler(event, context):
-    return 'Lambda CICD Test!!!!' + sys.version + '!'        
+    return 'Wow, Git Actions - Lambda CICD Test!!!!' + sys.version + '!'        
