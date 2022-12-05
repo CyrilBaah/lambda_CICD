@@ -36,7 +36,7 @@ jobs:
 
       - name: Update aws custom lambda function code
         env:
-          IMAGE_URI: ${{ steps.build-custome-image.outputs.image }}
+          IMAGE_URI: ${{ steps.build-custom-image.outputs.image }}
         run: |
           aws lambda update-function-code --function-name arn:aws:lambda:eu-central-1:355225645645:function:lambda_cicd --image-uri $IMAGE_URI
           
