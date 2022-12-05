@@ -39,6 +39,6 @@ jobs:
         env:
           IMAGE_URI: ${{ steps.build-custome-image.outputs.image }}
         run: |
-          aws lambda update-function-code --function arn:aws:lambda:eu-central-1:355225645645:function:lambda_cicd --image-uri $IMAGE_URI
+          aws lambda update-function-code --function-name arn:aws:lambda:eu-central-1:355225645645:function:lambda_cicd --image-uri $IMAGE_URI
           
 
