@@ -12,3 +12,15 @@ $ docker run -p 9000:8080 lambda_cicd:latest
 ```sh
 $ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
 ```
+4. Test the Docker container | Get all Countries
+```sh
+$ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"httpMethod": "GET", "path": "/countries"}'
+```
+5. Test the Docker container | Get all names
+```sh
+$ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"httpMethod": "GET", "path": "/names"}'
+```
+5. Test the Docker container | Get all todos
+```sh
+$ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"httpMethod": "GET", "path": "/todos"}'
+```
